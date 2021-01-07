@@ -3,7 +3,7 @@ import 'package:burc_rehberi/utils/strings.dart';
 import 'package:flutter/material.dart';
 
 class BurcListesi extends StatelessWidget {
-  List<Burc> tumBurclar;
+  static List<Burc> tumBurclar;
 
   @override
   Widget build(BuildContext context) {
@@ -51,20 +51,17 @@ class BurcListesi extends StatelessWidget {
 
     Burc oAnListeyeEklenenBurc = tumBurclar[index];
     return Card(
-    margin: EdgeInsets.only(left: 15,right: 15,bottom: 10,top: 10),
+      margin: EdgeInsets.only(left: 15, right: 15, bottom: 10, top: 10),
       elevation: 13,
       child: Padding(
-
-        padding:  EdgeInsets.all(0.0),
+        padding: EdgeInsets.all(0.0),
         child: ListTile(
-          onTap:()=> Navigator.pushNamed(context, "/burcDetay/$index"),
-
+          onTap: () => Navigator.pushNamed(context, "/burcDetay/$index"),
           leading: Image.asset(
             "images/" + oAnListeyeEklenenBurc.burcKucukResim,
             height: 65,
             width: 65,
           ),
-
           title: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Text(
