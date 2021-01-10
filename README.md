@@ -1,3 +1,6 @@
 # Burç Rehberi
+Bu Projede 12 farklı burç hakkında bilgiler verilmiştir.
 
-Bu projede 12 farklı burç hakkında bilgi verilmiştir.
+<p align="center">
+  <img width="460" height="750" src="https://github.com/ferhadus/Burc-Rehberi/blob/master/myapp.gif">
+</p>
